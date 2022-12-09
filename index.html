@@ -6,12 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Root Finder</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/math.js" type="text/javascript"></script>
   </head>
   <body>
     <div>
-        
+        <h2>Root Finder</h2>
+        <form onsubmit="return false">
+            <label for="algorithms">Choose Algorithm:</label>
+            <select id="algorithms" name="algorithms"  required>
+                <option></option>
+                <option value="1">Bisection Method</option>
+                <option value="2">Secant Method</option>
+                <option value="3">Newton's Method</option>
+                <option value="4">Fixed Point Method</option>
+                <option value="5">False Position Method</option>
+            </select><br><br>
+            <label for="expression">Expression:</label>
+            <input type="text" id="expression" name="expression" required placeholder="x^3-cos(x)"><br><br>
+            <label for="x">x:</label>
+            <input type="text" id="x" name="x" required>
+            <label for="y">y:</label>
+            <input type="text" id="y" name="y">
+            <button id="calculate">calculate</button><br>
+        </form><br>
+        <p id="root"></p>
     </div>
-
-	<script src="js/index.js"></script>
+	<script src="js/index.js" type="text/javascript"></script>
   </body>
 </html>
